@@ -1,0 +1,79 @@
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  margin-top: 33vh;
+  overflow: hidden;
+}
+
+p {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 10vw;
+  font-family: sans-serif;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  perspective: 1000px;
+  width: 1000px;
+  height: 500px;
+}
+
+.rotating-box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  position: relative;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s cubic-bezier(0, 0, 0, 1) forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.html {
+  cursor: none;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .title {
+    font-size: 25vw;
+  }
+}
