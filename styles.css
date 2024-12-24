@@ -14,8 +14,8 @@ body {
   align-items: center;
   margin: 0;
   text-align: center;
-  margin-top: 33vh;
   overflow: hidden;
+  margin-top: 20vh;
 }
 
 p {
@@ -28,16 +28,27 @@ p {
   font-family: sans-serif;
 }
 
-.links {
-  display: flex;
-  gap: 20px;
-  margin-top: 5px;
-  justify-content: center;
-}
-
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 45px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-button:hover {
+  background-color: black;
+  color: white;
 }
 
 .card {
@@ -74,6 +85,12 @@ a {
 
 @media (max-aspect-ratio: 1/1) {
   .title {
-    font-size: 25vw;
+    font-size: 20vw;
+  }
+  iframe {
+    display: none;
+  }
+  p {
+    font-size: 50px;
   }
 }
