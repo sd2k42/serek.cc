@@ -36,19 +36,18 @@ a {
 .join-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: white;
-  color: black;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid black;
   border-radius: 45px;
+  font-family: sans-serif;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .join-button:hover {
-  background-color: black;
-  color: white;
+  background-color: #222;
+  color: #fff;
 }
 
 .card {
